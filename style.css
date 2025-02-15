@@ -51,9 +51,8 @@ body {
 
 /* Sistema de Grid y Flex layouts */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: min(100%, 1200px);
+  margin-inline: auto;
   padding: 0 var(--spacing-md);
 }
 
@@ -156,13 +155,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-5px);
 }
 
-/* Sección de servicios */
-.services-grid {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-columns: repeat(4,1fr);
-  gap: var(20px);
-}
-
 /* Galería de experiencias */
 .gallery-grid {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -177,10 +169,6 @@ h1, h2, h3, h4, h5, h6 {
   
   .flex {
     flex-direction: column;
-  }
-  
-  .services-grid {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -234,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-list {
   display: flex;
+  align-items: center;
   gap: var(--spacing-lg);
   list-style: none;
   margin: 0;
@@ -568,10 +557,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-lg);
-  padding: var(--spacing-md);
+  justify-content: space-evenly;
 }
 
 .service-card {
@@ -581,9 +570,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: all var(--transition-normal);
   position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  flex: 1 0 220px;
+  max-width: 296px;
+  display: grid;
 }
 
 .service-card::before {
@@ -676,7 +665,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr;
     padding: var(--spacing-sm);
   }
 
