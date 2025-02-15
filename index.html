@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <a href="/" class="logo">
+          <span class="logo-text">Ideas Colombia</span>
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Menú">
+          <span class="hamburger"></span>
+        </button>
+        
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#servicios" class="nav-link">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experiencias" class="nav-link">Experiencias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#clientes" class="nav-link">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+  
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title animate-slide-up">
+          <span class="gradient-text">Innovar el Futuro</span>
+          <span class="subtitle">Creamos experiencias únicas para tus eventos</span>
+        </h1>
+        
+        <p class="hero-description animate-slide-up">
+          Somos una fábrica de ideas para tus eventos, creando espacios experienciales 
+          y solucionando las necesidades principales de felicidad para tus colaboradores.
+        </p>
+  
+        <div class="hero-cta animate-slide-up">
+          <a href="#contacto" class="btn btn-primary">Agenda una consulta</a>
+          <a href="#servicios" class="btn btn-secondary">Descubre nuestros servicios</a>
+        </div>
+  
+        <div class="hero-stats animate-fade-in">
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Ciudades</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Líneas de negocio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="gradient-text">Nuestros Servicios</span>
+        </h2>
+        <p class="section-description">
+          Soluciones integrales para todas tus necesidades corporativas
+        </p>
+      </div>
+  
+      <div class="services-grid">
+        <!-- Servicio 1: Bienestar Corporativo -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15 8L21 9L17 14L18 20L12 17L6 20L7 14L3 9L9 8L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Bienestar Corporativo</h3>
+          <ul class="service-features">
+            <li>Programas de salud física</li>
+            <li>Actividades team building</li>
+            <li>Eventos sociales de bienestar</li>
+            <li>Viajes corporativos</li>
+          </ul>
+          <a href="#contacto" class="service-link">Conoce más →</a>
+        </div>
+  
+        <!-- Servicio 2: Eventos Corporativos -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Eventos Corporativos</h3>
+          <ul class="service-features">
+            <li>Congresos y conferencias</li>
+            <li>Espectáculos temáticos</li>
+            <li>Montaje de escenarios</li>
+            <li>Alquiler de mobiliario</li>
+          </ul>
+          <a href="#contacto" class="service-link">Conoce más →</a>
+        </div>
+  
+        <!-- Servicio 3: Publicidad y Activación -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 19L19 12L22 15L15 22L12 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 13L16.5 5.5L2 2L5.5 16.5L13 18L18 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 2L9.586 9.586" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Publicidad y Activación</h3>
+          <ul class="service-features">
+            <li>Publicidad BTL y ATL</li>
+            <li>Activación de marca</li>
+            <li>Video corporativo</li>
+            <li>Montaje de stands</li>
+          </ul>
+          <a href="#contacto" class="service-link">Conoce más →</a>
+        </div>
+  
+        <!-- Servicio 4: Marketing Digital -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Marketing Digital 360</h3>
+          <ul class="service-features">
+            <li>Estrategia de pauta Meta/Google</li>
+            <li>Comunicación 360°</li>
+            <li>Producción de contenido</li>
+            <li>Optimización de redes sociales</li>
+          </ul>
+          <a href="#contacto" class="service-link">Conoce más →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencias y Portafolio Section -->
+<section id="experiencias" class="portfolio-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="gradient-text">Nuestras Experiencias</span>
+      </h2>
+      <p class="section-description">
+        Descubre cómo transformamos ideas en experiencias memorables
+      </p>
+    </div>
+
+    <!-- Filtros de Portafolio -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="eventos">Eventos</button>
+      <button class="filter-btn" data-filter="bienestar">Bienestar</button>
+      <button class="filter-btn" data-filter="marketing">Marketing</button>
+      <button class="filter-btn" data-filter="publicidad">Publicidad</button>
+    </div>
+
+    <!-- Grid de Portafolio -->
+    <div class="portfolio-grid">
+      <!-- Las imágenes son placeholder, deberás reemplazarlas con imágenes reales -->
+      <div class="portfolio-item" data-category="eventos">
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="evento-corporativos.avif" alt="Evento Corporativo" />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <h3>Evento Corporativo</h3>
+                <p>Congreso internacional de innovación</p>
+                <button class="btn-view-project">Ver Proyecto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="bienestar">
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="trabajo-en-equipo.avif" alt="Programa de Bienestar" />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <h3>Programa de Bienestar</h3>
+                <p>Team building experiencial</p>
+                <button class="btn-view-project">Ver Proyecto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="marketing">
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="campaña-digital.avif" alt="Campaña Digital" />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <h3>Campaña Digital</h3>
+                <p>Estrategia 360° en redes sociales</p>
+                <button class="btn-view-project">Ver Proyecto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de Proyecto -->
+      <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <div class="modal-body">
+            <div class="project-gallery">
+              <div class="gallery-main">
+                <img src="" alt="Proyecto imagen principal" />
+              </div>
+              <div class="gallery-thumbs">
+                <img src="galeria-1.avif" alt="Thumbnail 1" />
+                <img src="galeria-2.avif" alt="Thumbnail 2" />
+                <img src="galeria-3.avif" alt="Thumbnail 3" />
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Título del Proyecto</h2>
+              <p class="project-description">
+                Descripción detallada del proyecto y sus resultados...
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <h4>Cliente</h4>
+                  <p>Nombre del Cliente</p>
+                </div>
+                <div class="detail-item">
+                  <h4>Categoría</h4>
+                  <p>Tipo de Evento</p>
+                </div>
+                <div class="detail-item">
+                  <h4>Fecha</h4>
+                  <p>Mes, Año</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón "Ver más proyectos" -->
+    <div class="portfolio-footer">
+      <button class="btn btn-primary load-more">Ver más proyectos</button>
+    </div>
+  </div>
+</section>
+
+<section id="clientes" class="clients-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="gradient-text">Empresas que Confían en Nosotros</span>
+      </h2>
+      <p class="section-description">
+        Más de 10 años creando experiencias memorables para las mejores empresas
+      </p>
+    </div>
+
+    <!-- Logos de Clientes -->
+    <div class="clients-grid">
+      <!-- Reemplazar las imágenes con logos reales de clientes -->
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-gran-plaza.avif" alt="Logo Cliente 1" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="log-ceramica-italia.avif" alt="Logo Cliente 2" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-santafe.avif" alt="Logo Cliente 3" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-universidad-santo-tomas.avif" alt="Logo Cliente 4" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-galdrma.avif" alt="Logo Cliente 5" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-abai.avif" alt="Logo Cliente 6" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-universidad-uniagustina.avif" alt="Logo Cliente 6" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-corona.avif" alt="Logo Cliente 6" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-davivienda.avif" alt="Logo Cliente 6" />
+      </div>
+      <div class="client-logo animate-on-scroll">
+        <img src="logo-emergia.png" alt="Logo Cliente 6" />
+      </div>
+    </div>
+
+    <!-- Sección de Convenios -->
+    <div class="partnerships-section">
+      <div class="partnerships-content">
+        <h3 class="partnerships-title">Empresas con Convenio</h3>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 6L9 17L4 12"/>
+                </svg>
+              </div>
+              <h4 class="benefit-percentage">30%</h4>
+            </div>
+            <p class="benefit-description">
+              de descuento sobre eventos que realice la empresa
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-header">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 6L9 17L4 12"/>
+                </svg>
+              </div>
+              <h4 class="benefit-percentage">20%</h4>
+            </div>
+            <p class="benefit-description">
+              de descuento para los colaboradores y sus familiares en eventos personales
+            </p>
+          </div>
+        </div>
+
+        <div class="partnerships-cta">
+          <a href="#contacto" class="btn btn-primary">Conoce más sobre nuestros convenios</a>
+          <p class="terms-notice">Aplican términos y condiciones</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapa de Cobertura -->
+    <div class="coverage-section">
+      <h3 class="coverage-title">Presencia Nacional</h3>
+      <div class="coverage-content">
+        <div class="coverage-map">
+          <!-- Aquí iría el mapa SVG de Colombia con las ciudades marcadas -->
+          <img src="mapa-colombia.avif" alt="Mapa de Cobertura" class="map-image" />
+        </div>
+        <div class="coverage-cities">
+          <h4>Ciudades donde operamos:</h4>
+          <div class="cities-grid">
+            <div class="city-item">Tunja</div>
+            <div class="city-item">Bucaramanga</div>
+            <div class="city-item">Barranquilla</div>
+            <div class="city-item">Valledupar</div>
+            <div class="city-item">Santa Marta</div>
+            <div class="city-item">Cartagena</div>
+            <div class="city-item">Chocó</div>
+            <div class="city-item">Medellín</div>
+            <div class="city-item">Manizales</div>
+            <div class="city-item">Pereira</div>
+            <div class="city-item">Villavicencio</div>
+            <div class="city-item">Ibagué</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="gradient-text">Contáctanos</span>
+      </h2>
+      <p class="section-description">
+        Estamos listos para hacer realidad tu próximo evento
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Formulario de Contacto -->
+      <div class="contact-form-container">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" required 
+                   placeholder="¿Cómo te llamas?" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required 
+                   placeholder="tu@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" required 
+                   placeholder="Tu número de contacto" />
+          </div>
+
+          <div class="form-group">
+            <label for="company">Empresa</label>
+            <input type="text" id="company" name="company" 
+                   placeholder="Nombre de tu empresa" />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required 
+                      placeholder="Cuéntanos sobre tu proyecto"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+
+      <!-- Información de Contacto -->
+      <div class="contact-info">
+        <div class="info-card">
+          <h3>Información de Contacto</h3>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <span>Teléfonos:</span>
+                <a href="tel:3057494730">305 749 4730</a>
+                <a href="tel:3224629296">322 462 9296</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <path d="M22 6l-10 7L2 6"/>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <span>Correo:</span>
+                <a href="mailto:grupoempresarialideasdf@gmail.com">
+                  grupoempresarialideasdf@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h4>Síguenos en redes sociales</h4>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/grupoempresarialideasdf5418" 
+                   class="social-icon" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/grupoideasdf" 
+                   class="social-icon" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Logo y Descripción -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-text">Ideas DF</span>
+        </div>
+        <p class="brand-description">
+          Somos una fábrica de ideas para tus eventos, creando espacios
+          experienciales y solucionando las necesidades principales de
+          felicidad para tus colaboradores.
+        </p>
+      </div>
+
+      <!-- Enlaces Rápidos -->
+      <div class="footer-links">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencias">Experiencias</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicios -->
+      <div class="footer-services">
+        <h4>Nuestros Servicios</h4>
+        <ul>
+          <li>Bienestar Corporativo</li>
+          <li>Eventos Corporativos</li>
+          <li>Publicidad y Activación</li>
+          <li>Marketing Digital 360</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h4>Suscríbete a nuestro newsletter</h4>
+        <p>Recibe nuestras últimas noticias y ofertas especiales</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit" class="btn btn-primary">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        &copy; 2025 Ideas DF. Todos los derechos reservados.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
