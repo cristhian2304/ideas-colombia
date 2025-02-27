@@ -1,11 +1,14 @@
 /* Variables globales */
+/* Únicamente modificar estas variables de color en el CSS original */
+
+/* Variables globales */
 :root {
-  /* Paleta de colores (basada en el PDF) */
-  --primary-color: #0066CC;
-  --secondary-color: #FF6B00;
-  --text-color: #333333;
-  --light-bg: #F5F5F5;
-  --white: #FFFFFF;
+  /* Paleta de colores (actualizada a dorado, gris y negro) */
+  --primary-color: #D4AF37; /* Dorado en lugar del azul anterior */
+  --secondary-color: #4A4A4A; /* Gris oscuro en lugar del naranja anterior */
+  --text-color: #121212; /* Negro más profundo */
+  --light-bg: #F5F5F5; /* Se mantiene igual */
+  --white: #FFFFFF; /* Se mantiene igual */
   
   /* Tipografía */
   --font-primary: 'Inter', sans-serif;
