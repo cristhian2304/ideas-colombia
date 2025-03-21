@@ -118,3 +118,41 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(element);
   });
 });
+
+// JavaScript para la funcionalidad de la galería de videos
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleccionar todos los thumbnails de video
+  const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+  
+  // Agregar el evento de clic a cada thumbnail
+  videoThumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+      const videoSrc = this.getAttribute('data-video-src');
+      const videoContainer = this.closest('.video-container');
+      const videoPlayer = videoContainer.querySelector('.video-player');
+      
+      // Comprobar si es una URL de YouTube (para insertar iframe) o video directo
+      if (videoSrc.includes('youtube.com') || videoSrc.includes('youtu.be')) {
+        // Convertir URL de YouTube a formato embed si es necesario
+        let embedSrc = videoSrc;
+        if (videoSrc.includes('watch?v=')) {
+          const videoId = videoSrc.split('watch?v=')[1].split('&')[0];
+          embedSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        } else if (videoSrc.includes('youtu.be')) {
+          const videoId = videoSrc.split('youtu.be/')[1];
+          embedSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        }
+        
+        // Crear iframe para YouTube
+        videoPlayer.innerHTML = `<iframe src="${embedSrc}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+      } else {
+        // Crear elemento de video para videos locales o de otras fuentes
+        videoPlayer.innerHTML = `<video controls autoplay><source src="${videoSrc}" type="video/mp4">Tu navegador no soporta el elemento de video.</video>`;
+      }
+      
+      // Ocultar el thumbnail y mostrar el reproductor
+      this.style.display = 'none';
+      videoPlayer.classList.add('active');
+    });
+  });
+});
